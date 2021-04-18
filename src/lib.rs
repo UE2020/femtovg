@@ -392,6 +392,10 @@ where
         self.flush();
         self.renderer.screenshot()
     }
+    
+    pub fn screenshot_no_flush(&mut self) -> Result<ImgVec<RGBA8>, ErrorKind> {
+        self.renderer.screenshot()
+    }
 
     // State Handling
 
